@@ -69,7 +69,9 @@ write.csv(snv_mis_cor, file = "~/snv_mis_correlation_signature_gene_all_result.c
 
 
 ##################################
-## find the different genes between signatures
+### Instrument variable analysis of frame shift mutations
+## Instrumental variable analysis of missense mutations of those genes with significantly correlated with each methylation signature
+# Input above associated genes 
 snv_mis_cor_signi <- read.csv("~/snv_mis_correlation_signature_gene_result_significant0.1.csv")
 snv_cor_sig <- as.data.frame(table(snv_mis_cor_signi$sig))
 
@@ -202,6 +204,7 @@ write.csv(snv_fram_cor, file = "~/snv_frame_correlation_signature_gene_all_resul
 
 ##################################
 ## Instrument variable analysis of frame shift mutations
+### Instrumental variable analysis of missense mutations of those genes with significantly correlated with each methylation signature
 # Input above associated genes 
 snv_fram_cor_signi <- read.csv("~/snv_frame_correlation_signature_gene_result_significant_fdr0.1.csv")
 
