@@ -5,7 +5,7 @@ library(stringr)
 library(ivpack)
 library(parallel)
 # Load DNA methylation signatures
-load("~/hyper_hypo_coef_H.RData") # hyper_hypo_coef
+load("~/hyper_hypo_coef_H.RData") # hyper_hypo_coef(methylation signature scores)
 # Input gene expression profile 
 gene_matrix <- read.table("~/reference/EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv.gz", header = T, sep = "\t") #20531 11070
 gene <- gene_matrix
